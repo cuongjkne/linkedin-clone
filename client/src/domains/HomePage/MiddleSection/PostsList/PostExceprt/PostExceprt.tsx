@@ -1,9 +1,9 @@
 //hooks
-import { useAppSelector } from "../../../../common/utilities/hooks";
+import { useAppSelector } from "../../../../../common/utilities/hooks";
 //components
 import { PostAuthor } from "./PostAuthor/PostAuthor";
 //selectors
-import { selectPostById } from "../../../../features/posts/postsSelectors";
+import { selectPostById } from "../../../../../features/posts/postsSelectors";
 //styles
 import { Container, Title } from "./PostExceprt.style";
 

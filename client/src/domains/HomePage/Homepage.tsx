@@ -1,16 +1,18 @@
-import React from "react";
-
-//styles
+// styles
 import { Container } from "./Homepage.style";
-import { PostsList } from "./PostsList/PostsList";
 
-function Homepage() {
+// components
+import LeftSection from "./LeftSection/LeftSection";
+import Middle from "./MiddleSection/MiddleSection";
+import RightSection from "./RightSection/RightSection";
+
+function Home() {
   return (
     <Container>
-      <h1>Homepage</h1>
-      <PostsList />
+      <LeftSection />
+      <Middle />
+      <RightSection />
     </Container>
   );
 }
-
-export default Homepage;
+export default Home;

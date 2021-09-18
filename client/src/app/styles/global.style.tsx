@@ -27,7 +27,15 @@ export const Global = createGlobalStyle`
             font-size: ${px2vw(24)};
         }
     }
-
+    .App {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: var(--background-color);
+        font-family: 'Roboto', sans-serif;
+        height: 100%;
+        width: 100%;
+        color:white;
+    }
 `;
 
 export default Global;

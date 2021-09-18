@@ -4,13 +4,13 @@ import React, { useEffect } from "react";
 import {
   useAppDispatch,
   useAppSelector,
-} from "../../../common/utilities/hooks";
+} from "../../../../common/utilities/hooks";
 
 //selectors
-import { selectPostIds } from "../../../features/posts/postsSelectors";
+import { selectPostIds } from "../../../../features/posts/postsSelectors";
 
 //actions
-import { fetchPosts } from "../../../features/posts/postsActions";
+import { fetchPosts } from "../../../../features/posts/postsActions";
 import PostExcerpt from "./PostExceprt/PostExceprt";
 
 //styles
