@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import styled, { css } from 'styled-components';
-import ArrowDownIcon from '../../../../../../common/Icon/ArrowDownIcon';
+import React, { useState } from "react";
+import styled, { css } from "styled-components";
+// icons
+import ArrowDownIcon from "../../../../../../common/components/Icons/ArrowDownIcon";
 
 function ShowPanelIcon({ panel }) {
   const [isPanelActive, setisPanelActive] = useState(false);
@@ -11,9 +12,14 @@ function ShowPanelIcon({ panel }) {
     setisPanelActive(false);
   };
   return (
-    <Container tabIndex={1} isactive={isPanelActive} onBlur={closePanel} onClick={tooglePanelState}>
+    <Container
+      tabIndex={1}
+      isactive={isPanelActive}
+      onBlur={closePanel}
+      onClick={tooglePanelState}
+    >
       <ArrowDownIcon />
-      {isPanelActive ? panel : ''}
+      {isPanelActive ? panel : ""}
     </Container>
   );
 }

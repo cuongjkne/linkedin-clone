@@ -1,10 +1,10 @@
 //icons
-import ArrowRightIcon from '../../../../../common/Icon/ArrowRightIcon';
+import ArrowRightIcon from "../../../../../common/components/Icons/ArrowRightIcon";
 
 //components
-import Title from './Title/Title';
+import Title from "./Title/Title";
 //styles
-import { Container, List, LinkButton } from './RightSidePanelModel.style';
+import { Container, List, LinkButton } from "./RightSidePanelModel.style";
 
 function RightSidePanelModel({ title, items, linkText, linkUrl, children }) {
   return (

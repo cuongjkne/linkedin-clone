@@ -1,27 +1,27 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 //styles
-import { PanelModel } from '../../../../../../../common/Panel/PanelModel.style';
+import { PanelModel } from "../../../../../../../common/components/Panel/PanelModel.style";
 
 function PrivacyTermsPanel() {
   const items = [
     {
-      text: 'Privacy Policy',
-      link: '/'
+      text: "Privacy Policy",
+      link: "/",
     },
     {
-      text: 'User Agreement',
-      link: '/'
+      text: "User Agreement",
+      link: "/",
     },
     {
-      text: 'Cookie Policy',
-      link: '/'
+      text: "Cookie Policy",
+      link: "/",
     },
     {
-      text: 'Copyright Policy',
-      link: '/'
-    }
+      text: "Copyright Policy",
+      link: "/",
+    },
   ];
   const Items = items.map(({ text, link }, index) => (
     <a key={index} href={link} rel="noreferrer" target="_blank">

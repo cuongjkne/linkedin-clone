@@ -1,10 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 //icons
-import LinkedinIcon from '../../../../common/Icon/LinkedinIcon';
+import LinkedinIcon from "../../../../common/components/Icons/LinkedinIcon";
+
 //components
-import LinkItems from './LinkItems/LinkItems';
+import LinkItems from "./LinkItems/LinkItems";
 
 function Footer() {
   return (

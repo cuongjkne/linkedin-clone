@@ -1,20 +1,27 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 //icons
-import ConnectIcon from '../../../../common/Icon/ConnectIcon';
-import MyItemsIcon from '../../../../common/Icon/MyItemsIcon';
-import PremiumIcon from '../../../../common/Icon/PremiumIcon';
+import ConnectIcon from "../../../../common/components/Icons/ConnectIcon";
+import MyItemsIcon from "../../../../common/components/Icons/MyItemsIcon";
+import PremiumIcon from "../../../../common/components/Icons/PremiumIcon";
 //styles
-import { Container, Header, ConnectionSection, PremiumSection, MyItems } from './PersonalPanel.style';
+import {
+  Container,
+  Header,
+  ConnectionSection,
+  PremiumSection,
+  MyItems,
+} from "./PersonalPanel.style";
 
 function PersonalPanel() {
   return (
     <Container>
       <Header>
-        <img src="/images/background-user.svg" alt="background-user.svg" />
+        <img src="/imgs/background-user.svg" alt="background-user.svg" />
 
         <div>
           <Link to="">
-            <img src="/images/user.jpg" alt="user.jpg" />
+            <img src="/imgs/user.jpg" alt="user.jpg" />
             Cường Nguyễn
           </Link>
           <p>Front-end Web Developer</p>

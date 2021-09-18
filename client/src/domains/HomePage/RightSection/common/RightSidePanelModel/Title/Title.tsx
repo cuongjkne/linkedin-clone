@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import styled from 'styled-components';
+import styled from "styled-components";
+
 //icons
-import InfoIcon from '../../../../../../common/Icon/InfoIcon';
+import InfoIcon from "../../../../../../common/components/Icons/InfoIcon";
 
 function Title({ title, children }) {
   const [isPanelActive, setisPanelActive] = useState(false);

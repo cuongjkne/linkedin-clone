@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 //icons
-import LinkdelnSmallIcon from '../../../../../common/Icon/LinkdelnSmallIcon';
-import PlusIcon from '../../../../../common/Icon/PlusIcon';
+import LinkdelnSmallIcon from "../../../../../common/components/Icons/LinkdelnSmallIcon";
+import PlusIcon from "../../../../../common/components/Icons/PlusIcon";
 
 function RecommendedUserItem({ linkUrl, imgSrc, name, bio }) {
   return (
@@ -18,7 +18,7 @@ function RecommendedUserItem({ linkUrl, imgSrc, name, bio }) {
             {name}
             <LinkdelnSmallIcon />
           </h3>
-          <p>{bio.length > 70 ? bio.slice(0, 70) + ' ...' : bio}</p>
+          <p>{bio.length > 70 ? bio.slice(0, 70) + " ..." : bio}</p>
         </Link>
         <p>
           <PlusIcon /> Follow

@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import styled, { css } from 'styled-components';
+import React, { useEffect, useRef } from "react";
+import styled, { css } from "styled-components";
+
 //icons
-import CloseIcon from '../../../../../common/Icon/CloseIcon';
+import CloseIcon from "../../../../../common/components/Icons/CloseIcon";
 
 interface PanelValue {
   text: string;
@@ -20,10 +21,15 @@ function InfoPanel({ text, linkUrl, isPanelActive, closePanel }: PanelValue) {
     }
   }, [isPanelActive]);
   return (
-    <Container isPanelActive={isPanelActive} ref={ContainerRef} tabIndex={0} onBlur={closePanel}>
+    <Container
+      isPanelActive={isPanelActive}
+      ref={ContainerRef}
+      tabIndex={0}
+      onBlur={closePanel}
+    >
       <p>
-        {text + ' '}
-        {linkUrl ? <a href={linkUrl}>Read more</a> : ''}
+        {text + " "}
+        {linkUrl ? <a href={linkUrl}>Read more</a> : ""}
       </p>
       <div onClick={closePanel}>
         <CloseIcon />

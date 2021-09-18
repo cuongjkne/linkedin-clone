@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+
+//components
 import CommunityPanel from "./CommunityPanel/CommunityPanel";
 import PersonalPanel from "./PersonalPanel/PersonalPanel";
 

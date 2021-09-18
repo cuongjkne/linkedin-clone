@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 //extends
-import { PanelModel } from '../../../../common/Panel/PanelModel.style';
+import { PanelModel } from "../../../../common/components/Panel/PanelModel.style";
 
 export const Container = styled(PanelModel)`
   margin-top: 5px;

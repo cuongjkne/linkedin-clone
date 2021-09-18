@@ -1,9 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 //icons
-import PlusIcon from '../../../../common/Icon/PlusIcon';
+import PlusIcon from "../../../../common/components/Icons/PlusIcon";
+
 //styles
-import { Container, Section } from './CommunityPanel.style';
+import { Container, Section } from "./CommunityPanel.style";
 
 function CommunityPanel() {
   return (

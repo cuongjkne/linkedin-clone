@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 //extends
-import { PanelModel } from '../../../../common/Panel/PanelModel.style';
+import { PanelModel } from "../../../../common/components/Panel/PanelModel.style";
 
 export const Container = styled(PanelModel)`
   & > a {

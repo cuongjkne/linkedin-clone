@@ -1,8 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-import ExternalLinkIcon from '../../../../../common/Icon/ExternalLinkIcon';
+// icons
+import ExternalLinkIcon from "../../../../../common/components/Icons/ExternalLinkIcon";
 
 function CourseItem({ order, courseName, author, linkUrl }) {
   return (
