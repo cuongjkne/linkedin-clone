@@ -1,14 +1,16 @@
 import { Switch, Route } from "react-router";
 import { store } from "./store";
 
-//domains
+// domains
 import Homepage from "../domains/HomePage/Homepage";
 import { SinglePostPage } from "../domains/SinglePostPage/SinglePostPage";
 
-//styles
+// components
+import Header from "../common/components/Header/Header";
+// styles
 import Global from "./styles/global.style";
 
-//actions
+// actions
 import { fetchUsers } from "../features/users/usersActions";
 
 //load users
@@ -20,6 +22,7 @@ function App() {
       <Global />
       <Switch>
         <Route exact path="/">
+          <Header />
           <Homepage />
         </Route>
         <Route exact path="/posts/:postId" component={SinglePostPage} />
