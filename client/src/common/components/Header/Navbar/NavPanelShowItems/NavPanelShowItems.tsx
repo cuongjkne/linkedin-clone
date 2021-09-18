@@ -37,7 +37,7 @@ function NavPanelShowItems() {
     <>
       <UserItemWrapper tabIndex={1} onBlur={() => blurUserItem()}>
         <Item onMouseDown={() => toogleUserItemState()}>
-          <img src="/images/user.jpg" alt="user.jpg" />
+          <img src="/imgs/user.jpg" alt="user.jpg" />
           <p>
             Me <TriangleIcon />
           </p>

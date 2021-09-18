@@ -14,6 +14,20 @@ export const Global = createGlobalStyle`
         /* font-size: 100%; */
     }
     :root {
+        --main-color: #0a66c2;
+        --main-border-radius: 5px;
+        --padding-right-left-layout: 20px;
+        --second-color: #2977c9;
+        --background-color: #f2f2ee;
+        --btt-padding: 5px 15px;
+        --btt-border-radius: 40px;
+        --border-radius-small: 5px;
+        --letter-spacing: 0.5px;
+
+        --nav-font-size: 12px;
+        --nav-color-icon: rgb(94, 96, 99);
+
+        --main-background-color: rgb(242, 242, 238);
         @media (min-width: 0) {
             font-size: ${px2vw(50)};
         }
@@ -21,7 +35,7 @@ export const Global = createGlobalStyle`
             font-size: ${px2vw(30)};
         }
         @media (min-width: 1024px) {
-            font-size: ${px2vw(20)};
+            font-size: ${px2vw(15)};
         }
         @media (min-width:1440px){
             font-size: ${px2vw(24)};

@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 //styles
-import { Container, Header, Section } from './UserPanel.style';
+import { Container, Header, Section } from "./UserPanel.style";
 
 function UserPanel({ isactive }) {
   return !isactive ? (
@@ -9,7 +9,7 @@ function UserPanel({ isactive }) {
   ) : (
     <Container>
       <Header>
-        <img src="/images/user.jpg  " alt="user.jpg" />
+        <img src="/imgs/user.jpg  " alt="user.jpg" />
         <div>
           <h5>Cường Nguyễn</h5>
           <p>Student at The Earth</p>

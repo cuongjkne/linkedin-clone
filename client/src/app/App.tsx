@@ -21,7 +21,23 @@ function App() {
     <div className="App">
       <Global />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/feed">
+          <Header />
+          <Homepage />
+        </Route>
+        <Route exact path="/mynetwork">
+          <Header />
+          <Homepage />
+        </Route>
+        <Route exact path="/jobs">
+          <Header />
+          <Homepage />
+        </Route>
+        <Route exact path="/messaging">
+          <Header />
+          <Homepage />
+        </Route>
+        <Route exact path="/notifications">
           <Header />
           <Homepage />
         </Route>

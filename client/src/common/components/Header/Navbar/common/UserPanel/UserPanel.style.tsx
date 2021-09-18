@@ -1,34 +1,36 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-  @media only screen {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 3px 10px var(--nav-color-icon);
-    border-radius: 5px 0 5px 5px;
-    position: absolute;
-    top: 58px;
-    right: 0px;
-    background-color: white;
-    width: 270px;
-    cursor: auto;
+  && {
+    @media only screen {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 3px 10px var(--nav-color-icon);
+      border-radius: 5px 0 5px 5px;
+      position: absolute;
+      top: 58px;
+      right: 0px;
+      background-color: white;
+      width: 270px;
+      cursor: auto;
 
-    overflow: overlay;
-    section {
-      padding: 15px 15px 15px 15px;
-    }
-    h5 {
-      font-size: 16px;
-      font-weight: 500;
-    }
-    & > section:nth-child(4) {
-      a {
-        margin-top: 0;
+      overflow: overlay;
+      section {
+        padding: 15px 15px 15px 15px;
+      }
+      h5 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      & > section:nth-child(4) {
+        a {
+          margin-top: 0;
+        }
       }
     }
-  }
-  @media (max-width: 768px) {
-    height: 300px;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
   }
 `;
 
