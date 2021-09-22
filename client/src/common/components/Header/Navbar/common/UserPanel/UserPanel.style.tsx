@@ -13,7 +13,6 @@ export const Container = styled.div`
       background-color: white;
       width: 270px;
       cursor: auto;
-
       overflow: overlay;
       section {
         padding: 15px 15px 15px 15px;

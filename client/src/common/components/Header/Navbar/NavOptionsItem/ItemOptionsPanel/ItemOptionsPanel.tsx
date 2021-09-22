@@ -3,14 +3,14 @@ import { useHistory } from "react-router-dom";
 // styles
 import { Container, LinkItem, PanelShowItem } from "./ItemOptionsPanel.style";
 
-// components
-import UserPanel from "../../common/UserPanel/UserPanel";
-import WorkPanel from "../../common/WorkPanel/WorkPanel";
-
 // icons
 import MessageIcon from "../../../../Icons/MessageIcon";
 import MultiDotsIcon from "../../../../Icons/MultiDotsIcon";
 import NotificationIcon from "../../../../Icons/NotificationIcon";
+
+// components
+import UserPanel from "../../common/UserPanel/UserPanel";
+import WorkPanel from "../../common/WorkPanel/WorkPanel";
 
 function ItemsPanel({ isactive, userPanel, workPanel }) {
   const path = useHistory().location.pathname;

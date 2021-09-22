@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 // icons
 import HomeIcon from "../../../Icons/HomeIcon";
-import JobIcon from "../../../Icons/JobIcon";
+import AnimateJobIcon from "../../../Icons/JobIcon/AnimateJobIcon";
 import MessageIcon from "../../../Icons/MessageIcon";
 import NetworkIcon from "../../../Icons/NetworkIcon";
 import NotificationIcon from "../../../Icons/NotificationIcon";
@@ -27,7 +27,7 @@ function NavLinkItems() {
     {
       text: "Jobs",
       path: "/jobs",
-      children: <JobIcon />,
+      children: <AnimateJobIcon />,
     },
     {
       text: "Messaging",
