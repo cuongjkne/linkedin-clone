@@ -1,17 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-function ShowPanelItem({ text, icon, panel }) {
-  return (
-    <Container>
-      {icon}
-      <p>{text}</p>
-    </Container>
-  );
-}
-
-// TODO: item
-const Container = styled.div`
+export const PostItem = styled.div`
   display: flex;
   cursor: pointer;
   padding: 14px 7px;
@@ -29,4 +18,3 @@ const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.08);
   }
 `;
-export default ShowPanelItem;

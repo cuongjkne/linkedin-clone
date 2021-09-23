@@ -32,12 +32,14 @@ function NavLinkItems() {
     {
       text: "Messaging",
       path: "/messaging",
+      // this className is to hide the item in mobile mode
       className: "nav_linkitems_hidden",
       children: <MessageIcon />,
     },
     {
       text: "Notifications",
       path: "/notifications",
+      // this className is to hide the item in mobile mode
       className: "nav_linkitems_hidden",
       children: <NotificationIcon />,
     },

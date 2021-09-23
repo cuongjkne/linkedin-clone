@@ -1,61 +1,61 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 //panels
-import PrivacyTermsPanel from './ShowPanelIcon/Panel/PrivacyTermsPanel';
-import BusinessServicesPanel from './ShowPanelIcon/Panel/BusinessServicesPanel';
+import PrivacyTermsPanel from "./ShowPanelIcon/Panel/PrivacyTermsPanel";
+import BusinessServicesPanel from "./ShowPanelIcon/Panel/BusinessServicesPanel";
 
 //icons
-import ShowPanelIcon from './ShowPanelIcon/ShowPanelIcon';
+import ShowPanelIcon from "./ShowPanelIcon/ShowPanelIcon";
 
 function LinkItems() {
   const items = [
     {
-      text: 'About',
-      link: '/'
+      text: "About",
+      link: "/",
     },
     {
-      text: 'Accessibility',
-      link: '/'
+      text: "Accessibility",
+      link: "/",
     },
     {
-      text: 'Help Center',
-      link: '/'
+      text: "Help Center",
+      link: "/",
     },
     {
-      text: 'Privacy & Terms',
-      link: '/',
-      icon: <ShowPanelIcon panel={<PrivacyTermsPanel />} />
+      text: "Privacy & Terms",
+      link: "/",
+      icon: <ShowPanelIcon panel={<PrivacyTermsPanel />} />,
     },
     {
-      text: 'Ad Choices',
-      link: '/'
+      text: "Ad Choices",
+      link: "/",
     },
     {
-      text: 'Advertising',
-      link: '/'
+      text: "Advertising",
+      link: "/",
     },
     {
-      text: 'Business Services',
-      link: '/',
-      icon: <ShowPanelIcon panel={<BusinessServicesPanel />} />
+      text: "Business Services",
+      link: "/",
+      icon: <ShowPanelIcon panel={<BusinessServicesPanel />} />,
     },
     {
-      text: 'Get the LinkedIn app',
-      link: '/'
+      text: "Get the LinkedIn app",
+      link: "/",
     },
     {
-      text: 'More',
-      link: '/'
-    }
+      text: "More",
+      link: "/",
+    },
   ];
   const Items = items.map(({ text, link, icon }, index) => (
-    <p>
-      <a key={index} href={link} rel="noreferrer" target="_blank">
+    <div key={index}>
+      <a href={link} rel="noreferrer" target="_blank">
         {text}
       </a>
-      {icon ? icon : ''}
-    </p>
+      {icon ? icon : ""}
+    </div>
   ));
   return <Container>{Items}</Container>;
 }
@@ -68,7 +68,7 @@ const Container = styled.div`
     justify-content: space-around;
     height: 100px;
     width: 220px;
-    p {
+    & > div {
       display: flex;
       align-items: center;
       & > a {
