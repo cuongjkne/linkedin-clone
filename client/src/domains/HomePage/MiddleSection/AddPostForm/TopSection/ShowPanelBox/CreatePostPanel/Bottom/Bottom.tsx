@@ -10,7 +10,7 @@ import ThreeDotsIcon from "../../../../../../../../common/components/Icons/Three
 import VideoIcon from "../../../../../../../../common/components/Icons/VideoIcon";
 import AnalyticIcon from "../../../../../../../../common/components/Icons/AnalyticIcon";
 
-function Footer() {
+function Bottom() {
   return (
     <Container>
       <AddHastag>Add hashtag</AddHastag>
@@ -133,4 +133,4 @@ const PostBtn = styled.div`
     background-color: rgb(11, 89, 167);
   }
 `;
-export default Footer;
+export default Bottom;

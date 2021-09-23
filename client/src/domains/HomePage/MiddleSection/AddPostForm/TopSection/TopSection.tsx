@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 // components
 import ShowPanelBox from "./ShowPanelBox/ShowPanelBox";
 
